@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="072b26fa-4e5f-481c-9c11-fc525179d3d5" name="Default Changelist" comment="" />
+    <list default="true" id="072b26fa-4e5f-481c-9c11-fc525179d3d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/redis/tmp/redis/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/redis/tmp/redis/dump.rdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +18,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -105,6 +114,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1XhcQjrdMfirBp7PbM4xTHgutDr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -112,8 +122,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -132,7 +143,10 @@
       <option name="presentableId" value="Default" />
       <updated>1581501753466</updated>
       <workItem from="1581501757923" duration="3367000" />
-      <workItem from="1581559695953" duration="14623000" />
+      <workItem from="1581559695953" duration="15223000" />
+      <workItem from="1581917869806" duration="779000" />
+      <workItem from="1581991682467" duration="4599000" />
+      <workItem from="1582078452936" duration="7445000" />
     </task>
     <servers />
   </component>
@@ -140,17 +154,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581504891031">
+    <state x="453" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582093557497">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="453" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/65.24.1301.744@65.24.1301.744" timestamp="1581504891031" />
+    <state x="453" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/65.24.1301.744@65.24.1301.744" timestamp="1582093557497" />
+    <state x="503" y="141" key="FileChooserDialogImpl" timestamp="1582106013310">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="503" y="141" key="FileChooserDialogImpl/65.24.1301.744@65.24.1301.744" timestamp="1582106013310" />
     <state x="516" y="308" key="NewPhpFileDialog" timestamp="1581503233333">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="516" y="308" key="NewPhpFileDialog/65.24.1301.744@65.24.1301.744" timestamp="1581503233333" />
-    <state x="378" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1581559699963">
+    <state x="378" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1581991683101">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="378" y="211" key="com.intellij.ide.util.TipDialog/65.24.1301.744@65.24.1301.744" timestamp="1581559699963" />
+    <state x="378" y="211" key="com.intellij.ide.util.TipDialog/65.24.1301.744@65.24.1301.744" timestamp="1581991683101" />
   </component>
 </project>

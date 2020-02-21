@@ -3,21 +3,32 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StudentStoreRequest;
+use App\Http\Requests\StudentRequest;
 use App\Student;
+use http\Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Response;
+use Illuminate\Validation\ValidationException;
 use Mockery\Matcher\Subset;
 
 class StudentController extends Controller
 {
+    private $student;
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(Student $student)
+    {
+        $this->student = $student;
+    }
+
     public function index()
     {
-        return Student::all();
+        //dd(Student::paginate(10)->toArray());
+        return $this->student->getAllStundent();
     }
 
     /**
@@ -26,9 +37,13 @@ class StudentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StudentStoreRequest $request)
+    public function store(StudentRequest $request)
     {
-        return Student::create($request->all());
+        try {
+            return $this->student->createStudent($request);
+        } catch (ValidationException $e) {
+            return $e->errors();
+        }
     }
 
     /**
@@ -37,9 +52,9 @@ class StudentController extends Controller
      * @param  \App\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $student)
+    public function show($id)
     {
-        return $student;
+        return $this->student->getStudentById($id);
     }
 
     /**
@@ -51,8 +66,7 @@ class StudentController extends Controller
      */
     public function update(Request $request,$id)
     {
-        return Student::where('id',$id)->update($request->all());
-
+        return $this->student->updateStudent($id,$request);
     }
 
     /**
@@ -61,8 +75,9 @@ class StudentController extends Controller
      * @param  \App\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Student $student)
+    public function destroy($id)
     {
-        $student->delete();
+        return $this->student->deleteStudentById($id);
     }
 }
+
